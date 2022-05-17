@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+    div(class='d-flex flex-column justify-content-center align-items-center')
+        h1(class='text-center mb-4 ') API de Productos
+        div
+            a(href='/api/products/vista' class='btn btn-primary me-2') LISTADO DE PRODUCTOS
+            a(href='/api/products/agregar' class='btn btn-primary') AGREGAR PRODUCTO
