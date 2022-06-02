@@ -1,0 +1,315 @@
+{
+	"info": {
+		"_postman_id": "ba0e406f-1a43-4d2f-9d99-b1983fe23170",
+		"name": "ch-be",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19447030"
+	},
+	"item": [
+		{
+			"name": "proyecto-final-entrega-nro1",
+			"item": [
+				{
+					"name": "login",
+					"item": [
+						{
+							"name": "loguearse como admin",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "logout del admin",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "para ver si estoy logueado como admin",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/isLogin",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"isLogin"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "productos",
+					"item": [
+						{
+							"name": "traer lista de productos registrados",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/productos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"productos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "traer producto por id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/productos/172/2/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"productos",
+										"172",
+										"2",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "agregar un producto nuevo a la lista",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/productos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"productos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "actualizar un producto de la lista",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/productos/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"productos",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "eliminar un producto de la lista",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/productos/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"productos",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "carrito",
+					"item": [
+						{
+							"name": "crear un carrito",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/carrito",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"carrito"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "vaciar un carrito y eliminarlo",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/carrito/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"carrito",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "listar productos en el carrito especificado",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/carrito/id/productos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"carrito",
+										"id",
+										"productos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "agregar productos al carrito",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/carrito/id/productos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"carrito",
+										"id",
+										"productos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "eliminar un porducto de un carrito",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/carrito/id/productos/id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"carrito",
+										"id",
+										"productos",
+										"id"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

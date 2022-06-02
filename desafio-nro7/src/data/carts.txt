@@ -21,8 +21,23 @@
         "stock": 12,
         "thumbnail": "https://micalculadoracientifica.com/wp-content/uploads/2021/01/TI-Nspire-CX-Amazon.jpg",
         "timestamp": 1654206142724
+      },
+      {
+        "id": 2,
+        "title": "nspire-cx",
+        "price": "323",
+        "description": "ble ble ble",
+        "code": "102",
+        "stock": 12,
+        "thumbnail": "https://micalculadoracientifica.com/wp-content/uploads/2021/01/TI-Nspire-CX-Amazon.jpg",
+        "timestamp": 1654206142724
       }
     ],
     "timestamp": 1654208696360
+  },
+  {
+    "id": 2,
+    "products": [],
+    "timestamp": 1654210644133
   }
 ]
