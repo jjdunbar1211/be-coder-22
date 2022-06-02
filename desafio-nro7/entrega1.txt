@@ -1,0 +1,11 @@
+1) todos los endpoints especificados en la consigna están implementados y funcionan correctamente.
+
+2) adjunto colección de postman con la que se puede verificar rápido.
+
+3) agregué unas rutas de login. por defecto, cuando se levanta la aplicación, se tiene rol de USUARIO.
+   
+   el rol puede modificarse según, 
+
+                                    /api/login --> paso a ser ADMIN
+                                    /api/logout --> dejo de ser ADMIN, quedo como USUARIO
+                                    /api/isLogin --> indica el rol activo
