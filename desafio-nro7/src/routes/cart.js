@@ -34,7 +34,6 @@ router.post("/:id/productos", async (req, res) => {
   const products = req.body.products;
   const allProducts = (await productContainer.getAll()).payload;
   const foundProducts = await allProducts.filter(product => products.includes(product.id));
-  console.log(foundProducts)
   if (foundProducts.length === 0) {
     res.json(returnMessage(true, "Los productos ingresados no se encuentran registrados", null));
   } else {
