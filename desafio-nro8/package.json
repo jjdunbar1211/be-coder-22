@@ -1,0 +1,25 @@
+{
+  "name": "desafio-nro6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "moment": "^2.29.1",
+    "socket.io": "^4.4.1",
+    "express-handlebars": "^5.3",
+    "knex": "^0.95.6",
+    "sqlite3": "^5.0.2",
+    "mysql": "^2.18.1"
+  }
+}
